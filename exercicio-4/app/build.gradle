@@ -1,0 +1,14 @@
+plugins {
+    id('projetopoo.java')
+}
+
+
+application {
+    mainClass = 'projetopoo.FigurasAscii'
+
+}
+tasks.named('run') {
+    if (project.hasProperty('mainClass')) {
+        mainClass = project.property('mainClass')
+    }
+}

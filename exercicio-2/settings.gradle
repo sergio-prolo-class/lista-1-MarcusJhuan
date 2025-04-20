@@ -1,0 +1,5 @@
+
+rootProject.name = 'ProjetoPoo'
+include('app')
+
+includeBuild('build-logic')
